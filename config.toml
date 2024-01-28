@@ -27,3 +27,9 @@ VST3 = "Macintosh HD/Library/Audio/Plug-ins/VST3"
 AAX = "Macintosh HD/Library/Application Support/Avid/Audio/Plug-Ins"
 # Audio Units Plugins
 AU = "Macintosh HD/Library/Audio/Plug-Ins/Components"
+
+[extensions]
+VST2 = ".dll"
+VST3 = ".vst3"
+AAX = ".aaxplugin"
+AU = ".au"
