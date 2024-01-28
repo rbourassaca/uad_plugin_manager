@@ -2,8 +2,10 @@ package cmd
 
 import (
 	"fmt"
+	"rbourassa/uadPluginManager/internal/file"
 
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // removeCmd represents the remove command
@@ -11,7 +13,10 @@ var removeCmd = &cobra.Command{
 	Use:   "remove",
 	Short: "Remove plugins that aren't owned",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("remove called")
+		UADSystemProfile := file.Open(viper.Get("files.UADSystemProfile").(string))
+		toRemove := file.Find(UADSystemProfile, ": Demo not started", true)
+		fmt.Println(toRemove)
+		// Remove plugins
 	},
 }
 
