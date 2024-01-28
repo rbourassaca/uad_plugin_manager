@@ -33,3 +33,202 @@ VST2 = ".dll"
 VST3 = ".vst3"
 AAX = ".aaxplugin"
 AU = ".au"
+
+[pluginDefinition]
+"UAD 4K Buss Compressor" = "UAD 4K Buss Compressor"
+"UAD 4K Channel Strip" = "UAD 4K Channel Strip"
+"UAD ADA Flanger" = "UAD ADA Flanger"
+"UAD ADA STD-1 Stereo Tapped Delay" = "UAD ADA STD-1 Stereo Tapped Delay"
+"UAD AKG BX 20 Spring Reverb" = "UAD AKG BX 20"
+"UAD Ampeg B15N Bass Amplifier" = "UAD Ampeg B15N"
+"UAD Ampeg SVT-3 Pro Bass Amplifier" = "UAD Ampeg SVT3Pro"
+"UAD Ampeg SVT-VR Bass Amplifier" = "UAD Ampeg SVTVR"
+"UAD Ampeg SVT-VR Classic Bass Amplifier" = "UAD Ampeg SVTVR Classic"
+"UAD Ampex ATR-102 Tape Recorder" = "UAD Ampex ATR-102"
+"UAD AMS DMX 15-80 S Digital Delay and Pitch Shifter" = "UAD AMS DMX 15-80 S"
+"UAD AMS Neve DFC Channel Strip" = "UAD AMS Neve DFC Channel Strip"
+"UAD AMS RMX16 Digital Reverb" = "UAD AMS RMX16"
+"UAD AMS RMX16 Expanded Digital Reverb" = "UAD AMS RMX16 Expanded"
+"UAD Antares Auto-Tune Realtime" = "UAD Antares Auto-Tune Realtime"
+"UAD API 500 EQ Collection" = [ "UAD API 550A", "UAD API 560" ]
+"UAD API 2500 Bus Compressor" = "UAD API 2500"
+"UAD API Preamp" = "UAD API Preamp"
+"UAD API Vision Channel Strip Collection" = "UAD API Vision Channel Strip"
+"UAD API Vision Channel Strip Legacy" = "UAD API Vision Channel Strip Legacy"
+"UAD Auto-Tune Realtime Access" = "UAD Auto-Tune Realtime Access"
+"UAD Auto-Tune Realtime Advanced" = "UAD Auto-Tune Realtime Advanced"
+"UAD Avalon VT-737sp Channel Strip" = "UAD Avalon VT-737sp"
+"UAD Bermuda Triangle Distortion" = "UAD Bermuda Triangle"
+"UAD Brigade Chorus" = "UAD Brigade Chorus"
+"UAD bx_digital V2 EQ" = [ "UAD bx_digital V2 Mono", "UAD bx_digital V2" ]
+"UAD bx_digital V3 EQ Collection" = [ "UAD bx_digital V3 mix", "UAD bx_digital V3" ]
+"UAD bx_masterdesk" = "UAD bx_digital V3"
+"UAD bx_masterdesk Classic" = "UAD bx_masterdesk Classic"
+"UAD bx_refinement" = "UAD bx_refinement"
+"UAD bx_saturator V2" = "UAD bx_saturator V2"
+"UAD bx_subsynth Subharmonic Synth" = "UAD bx_subsynth"
+"UAD bx_tuner" = "UAD bx_tuner"
+"UAD C-Suite C-Axe Guitar Noise Suppressor" = "UAD C-Suite C-Axe"
+"UAD C-Suite C-Max Limiter" = "UAD C-Suite C-Max"
+"UAD C-Suite C-Vox Noise and Ambience Reduction" = "UAD C-Suite C-Vox"
+"UAD Cambridge EQ" = "UAD Cambridge"
+"UAD Capitol Chambers" = "UAD Capitol Chambers"
+"UAD Century Tube Channel Strip" = "UAD Century Tube Channel Strip"
+"UAD Chandler GAV19T Guitar Amplifier" = "UAD Chandler GAV19T"
+"UAD Chandler Limited Curve Bender EQ" = "UAD Chandler Limited Curve Bender"
+"UAD Chandler Limited Zener Limiter" = "UAD Chandler Limited Zener Limiter"
+"UAD Cooper Time Cube Delay" = "UAD Cooper Time Cube"
+"UAD Dangerous BAX EQ Collection" = [ "UAD Dangerous BAX EQ Master", "UAD Dangerous BAX EQ Mix" ]
+"UAD dbx 160 Compressor" = "UAD dbx 160"
+"UAD Diezel Herbert Amplifier" = "UAD Diezel Herbert"
+"UAD Diezel VH4 Amplifier" = "UAD Diezel VH4"
+"UAD DreamVerb Room Modeler" = "UAD DreamVerb"
+"UAD Dytronics Cyclosonic Panner" = "UAD Dytronics Cyclosonic Panner"
+"UAD Dytronics Tri-Stereo Chorus" = "UAD Dytronics Tri-Stereo Chorus"
+"UAD Eden WT800 Bass Amplifier" = "UAD Eden WT800"
+"UAD elysia alpha compressor" = [ "UAD elysia alpha master", "UAD elysia alpha mix" ]
+"UAD elysia mpressor" = "UAD elysia mpressor"
+"UAD Empirical Labs EL7 FATSO Compressor" = [ "UAD Empirical Labs FATSO Jr", "UAD Empirical Labs FATSO Sr" ]
+"UAD Empirical Labs EL8 Distressor Compressor" = "UAD Empirical Labs Distressor"
+"UAD EMT 140 Plate Reverb" = "UAD EMT 140"
+"UAD EMT 250 Digital Reverb" = "UAD EMT 250"
+"UAD ENGL 646 VS Guitar Amplifier" = "UAD ENGL E646 VS"
+"UAD ENGL 765 RT Guitar Amplifier" = "UAD ENGL E765 RT"
+"UAD ENGL Savage 120 Guitar Amplifier" = "UAD ENGL Savage 120"
+"UAD EP-34 Tape Echo" = "UAD EP-34 Tape Echo"
+"UAD Eventide H910 Harmonizer" = "UAD Eventide H910 Harmonizer"
+"UAD Fairchild 670 Legacy Limiter" = "UAD Fairchild 670 Legacy"
+"UAD Fairchild Tube Limiter Collection" = "UAD Fairchild 670"
+"UAD Fender 55 Tweed Deluxe Amplifier" = "UAD Fender 55 Tweed Deluxe"
+"UAD Friedman Amplifiers Collection" = [ "UAD Friedman BE100", "UAD Friedman DS40" ]
+"UAD Friedman Buxom Betty Amplifier" = "UAD Friedman Buxom Betty"
+"UAD Fuchs Overdrive Supreme 50 Amplifier" = "UAD Fuchs Overdrive Supreme 50"
+"UAD Fuchs Train II Guitar Amplifier" = "UAD Fuchs Train II"
+"UAD Galaxy Tape Echo" = "UAD Galaxy Tape Echo"
+"UAD Gallien-Krueger 800RB Bass Amplifier" = "UAD Gallien Krueger 800RB"
+"UAD Harrison 32C EQ" = [ "UAD Harrison 32C SE", "UAD Harrison 32C" ]
+"UAD Helios Type 69 Legacy EQ" = "UAD Helios Type 69 Legacy"
+"UAD Helios Type 69 Preamp and EQ Collection" = "UAD Helios Type 69"
+"UAD Hemisphere Mic Collection" = "UAD Hemisphere Mic Collection"
+"UAD Hitsville EQ Collection" = [ "UAD Hitsville EQ Mastering", "UAD Hitsville EQ" ]
+"UAD Hitsville Reverb Chambers" = "UAD Hitsville Reverb Chambers"
+"UAD Ibanez Tube Screamer TS808 Overdrive" = "UAD Ibanez Tube Screamer TS808"
+"UAD Korg SDD-3000 Digital Delay" = "UAD Korg SDD-3000"
+"UAD Lexicon 224 Digital Reverb" = "UAD Lexicon 224"
+"UAD Lexicon 480L Digital Reverb and Effects" = "UAD Lexicon 480L"
+"UAD Little Labs IBP Phase Alignment" = "UAD Little Labs IBP"
+"UAD Little Labs VOG Bass Enhancer" = "UAD Little Labs VOG"
+"UAD Maag EQ4 EQ" = "UAD Maag EQ4"
+"UAD Manley Massive Passive EQ Collection" = [
+  "UAD Manley Massive Passive MST",
+  "UAD Manley Massive Passive"
+]
+"UAD Manley Reference Microphone Preamplifier" = "UAD Manley Reference Mic Preamp"
+"UAD Manley Variable Mu Limiter" = "UAD Manley Variable Mu"
+"UAD Manley VOXBOX Channel Strip" = "UAD Manley VOXBOX"
+"UAD Marshall Bluesbreaker 1962 Amplifier" = "UAD Marshall Bluesbreaker 1962"
+"UAD Marshall JMP 2203 Amplifier" = "UAD Marshall JMP 2203"
+"UAD Marshall Plexi Classic Amplifier" = "UAD Marshall Plexi Classic"
+"UAD Marshall Plexi Super Lead 1959 Amplifier" = "UAD Marshall Plexi Super Lead 1959"
+"UAD Marshall Silver Jubilee 2555 Amplifier" = "UAD Marshall Silver Jubilee 2555"
+"UAD Massenburg DesignWorks MDWEQ5 EQ" = [ "UAD MDWEQ5-3B", "UAD MDWEQ5-5B" ]
+"UAD Millennia NSEQ-2 EQ" = "UAD Millennia NSEQ-2"
+"UAD Moog Multimode Filter Collection" = [
+  "UAD Moog Multimode Filter SE",
+  "UAD Moog Multimode Filter XL"
+]
+"UAD Moog Multimode Legacy Filter" = "UAD Moog Multimode Filter"
+"UAD MXR Flanger-Doubler" = "UAD MXR Flanger-Doubler"
+"UAD Neve 88RS Channel Strip Collection" = "UAD Neve 88RS"
+"UAD Neve 88RS Legacy Channel Strip" = "UAD Neve 88RS Legacy"
+"UAD Neve 1073 Legacy EQ" = [ "UAD Neve 1073 Legacy", "UAD Neve 1073SE Legacy" ]
+"UAD Neve 1073 Preamp and EQ Collection" = "UAD Neve 1073"
+"UAD Neve 1081 EQ" = [ "UAD Neve 1081", "UAD Neve 1081SE" ]
+"UAD Neve 1084 Preamp and EQ" = "UAD Neve 1084"
+"UAD Neve 31102 EQ" = [ "UAD Neve 31102", "UAD Neve 31102SE" ]
+"UAD Neve 33609 Stereo Limiter Compressor" = [ "UAD Neve 33609 C", "UAD Neve 33609SE" ]
+"UAD Neve Dynamics Collection" = [ "UAD Neve 2254 E", "UAD Neve 2254 E Dual" ]
+"UAD Neve Preamp" = "UAD Neve Preamp"
+"UAD Ocean Way Microphone Collection" = [
+  "UAD Ocean Way Mic Collection 180",
+  "UAD Ocean Way Mic Collection"
+]
+"UAD Ocean Way Studios Room Modeler" = "UAD Ocean Way Studios"
+"UAD OTO Biscuit 8-bit Filter Effects" = "UAD OTO Biscuit 8-bit Effects"
+"UAD Oxford Dynamic EQ" = "UAD Oxford Dynamic EQ"
+"UAD Oxford Envolution Envelope Shaper" = "UAD Oxford Envolution"
+"UAD Oxford EQ" = "UAD Oxford EQ"
+"UAD Oxford Inflator" = "UAD Oxford Inflator"
+"UAD Oxford Limiter V2" = "UAD Oxford Limiter"
+"UAD Oxford SuprEsser DS" = "UAD Oxford SuprEsser DS"
+"UAD Oxide Tape Recorder" = "UAD Oxide Tape"
+"UAD Precision Buss Compressor" = "UAD Precision Buss Compressor"
+"UAD Precision De-Esser" = "UAD Precision De-Esser"
+"UAD Precision Enhancer Hz" = "UAD Precision Enhancer Hz"
+"UAD Precision Enhancer kHz" = "UAD Precision Enhancer kHz"
+"UAD Precision Equalizer" = "UAD Precision Equalizer"
+"UAD Precision K-Stereo Ambience Recovery" = "UAD Precision K-Stereo"
+"UAD Precision Limiter" = "UAD Precision Limiter"
+"UAD Precision Maximizer" = "UAD Precision Maximizer"
+"UAD Precision Mix Rack Collection" = [
+  "UAD Precision Channel Strip",
+  "UAD Precision Delay Mod L",
+  "UAD Precision Delay Mod",
+  "UAD Precision Reflection Engine"
+]
+"UAD Precision Multiband Compressor" = "UAD Precision Multiband"
+"UAD Pultec EQP-1A Legacy EQ" = "UAD Pultec EQP-1A Legacy"
+"UAD Pultec Passive EQ Collection" = [ "UAD Pultec EQP-1A", "UAD Pultec HLF-3C", "UAD Pultec MEQ-5" ]
+"UAD Pultec-Pro Legacy EQ" = "UAD Pultec-Pro Legacy"
+"UAD Pure Plate Reverb" = "UAD Pure Plate"
+"UAD Putnam Microphone Collection" = [ "UAD Putnam Mic Collection 180", "UAD Putnam Mic Collection" ]
+"UAD Raw Distortion" = "UAD Raw"
+"UAD RealVerb-Pro Room Modeler" = "UAD RealVerb-Pro"
+"UAD Roland CE-1 Chorus" = "UAD Roland CE-1"
+"UAD Roland Dimension D Chorus" = "UAD Roland Dimension D"
+"UAD Roland RE-201 Tape Delay" = "UAD Roland RE-201"
+"UAD Shadow Hills Mastering Compressor" = "UAD Shadow Hills Mastering Compressor"
+"UAD Softube Amp Room Half-Stack" = "UAD Softube Amp Room Half-Stack"
+"UAD Softube Bass Amp Room" = "UAD Softube Bass Amp Room"
+"UAD Softube Bass Amp Room 8x10" = "UAD Softube Bass Amp Room 8x10"
+"UAD Softube Metal Amp Room" = "UAD Softube Metal Amp Room"
+"UAD Softube Vintage Amp Room" = "UAD Softube Vintage Amp Room"
+"UAD Softube Vocoder" = "UAD Softube Vocoder"
+"UAD Sound Machine Wood Works" = "UAD Sound Machine Wood Works"
+"UAD Sphere Mic Collection" = [ "UAD Sphere Mic Collection 180", "UAD Sphere Mic Collection" ]
+"UAD SPL Transient Designer" = "UAD SPL Transient Designer"
+"UAD SPL TwinTube Saturation" = "UAD SPL TwinTube"
+"UAD SPL Vitalizer MK2-T" = "UAD SPL Vitalizer MK2-T"
+"UAD SSL 4000 E Channel Strip Collection" = "UAD SSL E Channel Strip"
+"UAD SSL 4000 E Legacy Channel Strip" = "UAD SSL E Channel Strip Legacy"
+"UAD SSL 4000 G Bus Compressor Collection" = "UAD SSL G Bus Compressor"
+"UAD SSL 4000 G Legacy Bus Compressor" = "UAD SSL G Bus Compressor Legacy"
+"UAD Studer A800 Tape Recorder" = "UAD Studer A800"
+"UAD Studio D Chorus" = "UAD Studio D Chorus"
+"UAD Suhr PT100 Amplifier" = "UAD Suhr PT100"
+"UAD Suhr SE100 Amplifier" = "UAD Suhr SE100"
+"UAD Summit Audio TLA-100A Compressor" = "UAD Summit Audio TLA-100A"
+"UAD Teletronix LA-2A Legacy Leveler" = "UAD Teletronix LA-2A Legacy"
+"UAD Teletronix LA-2A Leveler Collection" = [
+  "UAD Teletronix LA-2",
+  "UAD Teletronix LA-2A Gray",
+  "UAD Teletronix LA-2A Silver"
+]
+"UAD Teletronix LA-3A Audio Leveler" = "UAD Teletronix LA-3A"
+"UAD Thermionic Culture Vulture Distortion" = "UAD Thermionic Culture Vulture"
+"UAD Tonelux Tilt EQ" = [ "UAD Tonelux Tilt Live", "UAD Tonelux Tilt" ]
+"UAD Trident A-Range EQ" = "UAD Trident A-Range"
+"UAD TS Overdrive" = "UAD TS Overdrive"
+"UAD Tube-Tech CL 1B Compressor" = "UAD Tube-Tech CL 1B"
+"UAD Tube-Tech CL 1B mk II" = "UAD Tube-Tech CL 1B mk II"
+"UAD Tube-Tech EQ Collection" = [ "UAD Tube-Tech ME 1B", "UAD Tube-Tech PE 1C" ]
+"UAD UA 175B and 176 Tube Compressor Collection" = [ "UAD UA 175-B", "UAD UA 176" ]
+"UAD UA 610-A Tube Preamp and EQ" = "UAD UA 610-A"
+"UAD UA 610-B Tube Preamp and EQ" = "UAD UA 610-B"
+"UAD UA 1176 Limiter Collection" = [ "UAD UA 1176 Rev A", "UAD UA 1176AE", "UAD UA 1176LN Rev E" ]
+"UAD UA 1176LN Legacy Limiter" = "UAD UA 1176LN Legacy"
+"UAD UA 1176SE Legacy Limiter" = "UAD UA 1176SE Legacy"
+"UAD V76 Preamp" = "UAD V76 Preamp"
+"UAD Valley People Dyna-mite Dynamics" = "UAD Valley People Dyna-mite"
+"UAD Vertigo VSC-2 Compressor" = "UAD Vertigo VSC-2"
+"UAD Vertigo VSM-3 Saturator" = "UAD Vertigo VSM-3"
