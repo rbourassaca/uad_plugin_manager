@@ -1,0 +1,16 @@
+# UAD Plugin Cleaner
+
+[files]
+UADSystemProfile = "./UADSystemProfile.txt"
+
+[path.win]
+VST2 = "C:\\Program Files\\Steinberg\\VSTPlugins\\Universal Audio"
+VST3 = "C:\\Program Files\\Common Files\\VST3\\Universal Audio"
+AAX = "C:\\Program Files\\Common Files\\Avid\\Audio\\Plug-ins\\Universal Audio"
+AU= ""
+
+[path.osx]
+VST2 = ""
+VST3 = ""
+AAX = ""
+AU = ""
