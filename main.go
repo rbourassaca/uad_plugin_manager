@@ -2,10 +2,10 @@ package main
 
 import (
 	"rbourassa/uadPluginManager/cmd"
-	"rbourassa/uadPluginManager/internal/configs"
+	"rbourassa/uadPluginManager/internal/config"
 )
 
 func main() {
-	configs.LoadConfig()
+	config.Load()
 	cmd.Execute()
 }

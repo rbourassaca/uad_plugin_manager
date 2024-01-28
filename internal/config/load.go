@@ -1,11 +1,11 @@
-package configs
+package config
 
 import (
 	"github.com/spf13/viper"
 )
 
 
-func LoadConfig()  {
+func Load()  {
 	viper.SetConfigFile("config.toml")
 	viper.ReadInConfig()
 }
