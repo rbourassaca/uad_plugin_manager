@@ -15,7 +15,6 @@ func Find(file *os.File, text string, crop bool)[]string {
 			line := scanner.Text()
 			if crop {
 				line = strings.Split(line, text)[0]
-				
 			}
 			list = append(list, line)
 		}
