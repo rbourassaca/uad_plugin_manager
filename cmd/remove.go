@@ -1,6 +1,3 @@
-/*
-Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -35,5 +32,5 @@ func init() {
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	 removeCmd.Flags().BoolP("WAZA", "t", false, "Help message for toggle")
+	// rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
