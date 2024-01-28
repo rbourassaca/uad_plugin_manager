@@ -1,0 +1,15 @@
+files:
+  UADSystemProfile: ./UADSystemProfile.txt
+pluginFormats:
+  - {
+      path: C:\Program Files\Steinberg\VSTPlugins\Universal Audio,
+      extension: .dll,
+    }
+  - {
+      path: C:\Program Files\Common Files\VST3\Universal Audio,
+      extension: .vst3,
+    }
+  - {
+      path: C:\Program Files\Common Files\Avid\Audio\Plug-ins\Universal Audio,
+      extension: .aax,
+    }

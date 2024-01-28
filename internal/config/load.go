@@ -5,49 +5,28 @@ import (
 )
 
 type(
-	config struct{
-		Files files
-		Paths paths
-		Extensions extensions
-		PluginDefinition map[string][]interface{}
+	ConfigType struct{
+		Files FilesType
+		PluginFormats []PluginFormatType
+		PluginDefinition map[string][]string
 	}
 
-	files struct {
+	FilesType struct {
 		UADSystemProfile string;
 	}
 
-	paths struct {
-		Win win
-		Osx osx
-	}
-
-	win struct {
-		VST2 string
-		VST3 string
-		AAX string
-	}
-
-	osx struct {
-		VST2 string
-		VST3 string
-		AAX string
-		AU string
-	}
-
-	extensions struct {
-		VST2 string
-		VST3 string
-		AAX string
-		AU string
+	PluginFormatType struct {
+		Path string
+		Extension string
 	}
 )
 
-var Config config
+var Config ConfigType
 
 func Load()  {
-	viper.SetConfigFile("config.toml")
+	viper.SetConfigFile("config.yaml")
 	viper.ReadInConfig()
-	viper.SetConfigFile("pluginDefinition.toml")
+	viper.SetConfigFile("pluginDefinition.yaml")
 	viper.MergeInConfig()
-	viper.Unmarshal(&Config)
+	viper.UnmarshalExact(&Config)
 }
