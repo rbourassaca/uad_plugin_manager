@@ -9,7 +9,7 @@ UADSystemProfile = "./UADSystemProfile.txt"
 
 
 # Used to locate DSP powered plugins on Windows
-[path.win]
+[paths.win]
 # VST2 Plugins
 VST2 = "C:\\Program Files\\Steinberg\\VSTPlugins\\Universal Audio"
 # VST3 Plugins
@@ -18,7 +18,7 @@ VST3 = "C:\\Program Files\\Common Files\\VST3\\Universal Audio"
 AAX = "C:\\Program Files\\Common Files\\Avid\\Audio\\Plug-ins\\Universal Audio"
 
 # Used to locate DSP powered plugins on Mac OS X
-[path.osx]
+[paths.osx]
 # VST2 Plugins
 VST2 = "Macintosh HD/Library/Audio/Plug-Ins/VST/Universal Audio"
 # VST3 Plugins
