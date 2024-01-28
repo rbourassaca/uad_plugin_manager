@@ -1,15 +1,29 @@
 # UAD Plugin Cleaner
 
+# Used to locate files required to 
 [files]
+# UADSystemProfile.txt is required to automatically remove plugins that you do not own.
+# You can grab your own by clicking: 
+# "UAD Meter & Control Panel" -> "System Info" -> "Save Detailed System Profile"
 UADSystemProfile = "./UADSystemProfile.txt"
 
+
+# Used to locate DSP powered plugins on Windows
 [path.win]
+# VST2 Plugins
 VST2 = "C:\\Program Files\\Steinberg\\VSTPlugins\\Universal Audio"
+# VST3 Plugins
 VST3 = "C:\\Program Files\\Common Files\\VST3\\Universal Audio"
+# AAX Plugins
 AAX = "C:\\Program Files\\Common Files\\Avid\\Audio\\Plug-ins\\Universal Audio"
 
+# Used to locate DSP powered plugins on Mac OS X
 [path.osx]
-VST2 = ""
-VST3 = ""
-AAX = ""
-AU = ""
+# VST2 Plugins
+VST2 = "Macintosh HD/Library/Audio/Plug-Ins/VST/Universal Audio"
+# VST3 Plugins
+VST3 = "Macintosh HD/Library/Audio/Plug-ins/VST3"
+# AAX Plugins
+AAX = "Macintosh HD/Library/Application Support/Avid/Audio/Plug-Ins"
+# Audio Units Plugins
+AU = "Macintosh HD/Library/Audio/Plug-Ins/Components"
