@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"fmt"
 	"rbourassa/uadPluginManager/internal/file"
 
 	"github.com/spf13/cobra"
@@ -12,13 +13,21 @@ var removeCmd = &cobra.Command{
 	Use:   "remove",
 	Short: "Remove plugins that aren't owned",
 	Run: func(cmd *cobra.Command, args []string) {
+		// Load the UADSystemProfile
 		UADSystemProfile := file.Open(viper.Get("files.UADSystemProfile").(string))
+		// Load plugins to remove
 		toRemove := file.Find(UADSystemProfile, ": Demo not started", true)
-		for i := 0; i<len(toRemove); i++ {
-			//viper.Get(fmt.Sprintf("pluginDefinition.%s", toRemove[i]))
-			//fmt.Println(viper.Get(fmt.Sprintf("pluginDefinition.%s", toRemove[i])))
-			//fmt.Println(reflect.TypeOf(viper.Get(fmt.Sprintf("pluginDefinition.%s", toRemove[i]))))
-			// Remove plugins
+		// For each collections to remove
+		for i := 0; i<len(toRemove); i++ { 
+			// Creating a variable for the current collection
+			var collection []string
+			viper.UnmarshalKey(fmt.Sprintf("pluginDefinition.%s", toRemove[i]), &collection)
+			// For each plugins in the current collection
+			for x := 0; x < len(collection); x++ {
+				plugin := collection[x]
+				fmt.Println(plugin)
+				//TODO: Move the current plugin
+			}
 		}
 	},
 }
