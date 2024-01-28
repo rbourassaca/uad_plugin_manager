@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"rbourassa/uadPluginManager/internal/file"
 
 	"github.com/spf13/cobra"
@@ -15,8 +14,12 @@ var removeCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		UADSystemProfile := file.Open(viper.Get("files.UADSystemProfile").(string))
 		toRemove := file.Find(UADSystemProfile, ": Demo not started", true)
-		fmt.Println(toRemove)
-		// Remove plugins
+		for i := 0; i<len(toRemove); i++ {
+			//viper.Get(fmt.Sprintf("pluginDefinition.%s", toRemove[i]))
+			//fmt.Println(viper.Get(fmt.Sprintf("pluginDefinition.%s", toRemove[i])))
+			//fmt.Println(reflect.TypeOf(viper.Get(fmt.Sprintf("pluginDefinition.%s", toRemove[i]))))
+			// Remove plugins
+		}
 	},
 }
 
