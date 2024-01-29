@@ -11,5 +11,5 @@ pluginFormats:
     }
   - {
       path: C:\Program Files\Common Files\Avid\Audio\Plug-ins\Universal Audio,
-      extension: .aax,
+      extension: .aaxplugin,
     }
