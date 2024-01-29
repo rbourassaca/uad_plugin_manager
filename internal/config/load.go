@@ -4,29 +4,29 @@ import (
 	"github.com/spf13/viper"
 )
 
-type(
-	ConfigType struct{
-		Files FilesType
-		PluginFormats []PluginFormatType
+type (
+	ConfigType struct {
+		Files            FilesType
+		PluginFormats    []PluginFormatType
 		PluginDefinition map[string][]string
 	}
 
 	FilesType struct {
-		UADSystemProfile string;
+		UADSystemProfile string
 	}
 
 	PluginFormatType struct {
-		Path string
+		Path      string
 		Extension string
 	}
 )
 
 var Config ConfigType
 
-func Load()  {
-	viper.SetConfigFile("config.yaml")
+func Load() {
+	viper.SetConfigFile("./configs/config.yaml")
 	viper.ReadInConfig()
-	viper.SetConfigFile("pluginDefinition.yaml")
+	viper.SetConfigFile("./configs/pluginDefinition.yaml")
 	viper.MergeInConfig()
 	viper.UnmarshalExact(&Config)
 }

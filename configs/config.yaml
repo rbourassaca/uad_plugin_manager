@@ -1,5 +1,5 @@
 files:
-  UADSystemProfile: ./UADSystemProfile.txt
+  UADSystemProfile: ./configs/UADSystemProfile.txt
 pluginFormats:
   - {
       path: C:\Program Files\Steinberg\VSTPlugins\Universal Audio,
