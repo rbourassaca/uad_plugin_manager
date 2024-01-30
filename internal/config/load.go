@@ -20,6 +20,7 @@ type (
 	PluginFormatType struct {
 		Path      string
 		Extension string
+		Name      string
 	}
 )
 
