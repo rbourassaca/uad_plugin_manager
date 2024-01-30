@@ -9,7 +9,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "uad_plugin_manager",
 	Short: "Simple tool to manage UAD plugins",
-	Long:	"UAD Plugin Manager is a tool used to manage Universal Audio DSP powered plugins.",
+	Long:  "UAD Plugin Manager is a tool used to manage Universal Audio DSP powered plugins.",
 }
 
 func Execute() {
@@ -30,5 +30,3 @@ func init() {
 	// when this action is called directly.
 	// rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
-
-

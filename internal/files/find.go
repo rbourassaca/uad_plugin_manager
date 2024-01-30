@@ -1,4 +1,4 @@
-package file
+package files
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Find(file *os.File, text string, crop bool)[]string {
+func Find(file *os.File, text string, crop bool) []string {
 	var list []string
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
