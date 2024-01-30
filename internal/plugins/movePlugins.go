@@ -10,9 +10,11 @@ import (
 func MovePlugins(pluginsToRemove []string) {
 	for i := 0; i < len(config.Config.PluginFormats); i++ {
 		dirTree := files.GetDirTree(config.Config.PluginFormats[i].Path)
+		pluginFormatName := config.Config.PluginFormats[i].Name
 		for x := 0; x < len(pluginsToRemove); x++ {
 			currentPath := GetPluginPaths(pluginsToRemove[x], dirTree)
-			newPath := config.Appdata + config.RemovedPluginDir + "/" + config.Config.PluginFormats[i].Name + strings.TrimPrefix(currentPath, config.Config.PluginFormats[i].Path)
+			pluginLocation := strings.TrimPrefix(currentPath, config.Config.PluginFormats[i].Path)
+			newPath := config.Appdata + config.RemovedPluginDir + "/" + pluginFormatName + pluginLocation
 			err := files.Move(currentPath, newPath)
 			fmt.Println(err)
 		}
