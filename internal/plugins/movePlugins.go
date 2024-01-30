@@ -13,7 +13,7 @@ func MovePlugins(pluginsToRemove []string) {
 			currentPath := GetPluginPaths(pluginsToRemove[x], dirTree)
 			newPath := config.Appdata + config.RemovedPluginDir
 			err := files.Move(currentPath, newPath)
-			fmt.Println(fmt.Println(err))
+			fmt.Println(err)
 		}
 	}
 }
