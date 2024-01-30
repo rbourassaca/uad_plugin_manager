@@ -1,6 +1,7 @@
 package plugins
 
 import (
+	"path/filepath"
 	"strings"
 )
 
@@ -10,5 +11,5 @@ func GetPluginPaths(fileName string, tree []string) string {
 			return tree[i]
 		}
 	}
-	return fileName
+	return filepath.FromSlash(fileName)
 }

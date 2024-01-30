@@ -2,17 +2,17 @@ files:
   UADSystemProfile: ./configs/UADSystemProfile.txt
 pluginFormats:
   - {
-      path: C:\Program Files\Steinberg\VSTPlugins\Universal Audio,
+      path: C:/Program Files/Steinberg/VSTPlugins/Universal Audio,
       extension: .dll,
       name: VST2,
     }
   - {
-      path: C:\Program Files\Common Files\VST3\Universal Audio,
+      path: C:/Program Files/Common Files/VST3/Universal Audio,
       extension: .vst3,
       name: VST3,
     }
   - {
-      path: C:\Program Files\Common Files\Avid\Audio\Plug-ins\Universal Audio,
+      path: C:/Program Files/Common Files/Avid/Audio/Plug-ins/Universal Audio,
       extension: .aaxplugin,
       name: AAX,
     }
