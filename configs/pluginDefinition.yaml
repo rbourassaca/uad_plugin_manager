@@ -58,7 +58,7 @@ pluginDefinition:
     - UAD bx_digital V3 mix
     - UAD bx_digital V3
   UAD bx_masterdesk:
-    - UAD bx_digital V3
+    - UAD bx_masterdesk
   UAD bx_masterdesk Classic:
     - UAD bx_masterdesk Classic
   UAD bx_refinement:
@@ -134,6 +134,7 @@ pluginDefinition:
     - UAD Fairchild 670 Legacy
   UAD Fairchild Tube Limiter Collection:
     - UAD Fairchild 670
+    - UAD Fairchild 660
   UAD Fender 55 Tweed Deluxe Amplifier:
     - UAD Fender 55 Tweed Deluxe
   UAD Friedman Amplifiers Collection:
