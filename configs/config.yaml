@@ -16,3 +16,8 @@ pluginFormats:
       extension: .aaxplugin,
       name: AAX,
     }
+  - {
+      path: C:/Program Files/Universal Audio/Powered Plugins/UAD-2 Powered Plugins,
+      extension: .dll,
+      name: Console,
+    }
