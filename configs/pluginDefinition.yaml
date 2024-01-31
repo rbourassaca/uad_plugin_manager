@@ -28,8 +28,7 @@ pluginDefinition:
   UAD AMS RMX16 Expanded Digital Reverb:
     - UAD AMS RMX16 Expanded
   UAD Antares Auto-Tune Realtime:
-    - UAD Auto-Tune Realtime Access
-    - UAD Auto-Tune Realtime Advanced
+    - UAD Antares Auto-Tune Realtime
   UAD API 500 EQ Collection:
     - UAD API 550A
     - UAD API 560
