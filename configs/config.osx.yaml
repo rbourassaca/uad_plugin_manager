@@ -1,1 +1,25 @@
-# Config for mac os need to be created.
+# Config for mac os need to be tested.
+files:
+  UADSystemProfile: ./configs/UADSystemProfile.txt
+pluginFormats:
+  - {
+      path: /Library/Audio/Plug-Ins/VST/Universal Audio,
+      extension: .vst,
+      name: VST2,
+    }
+  - { path: /Library/Audio/Plug-ins/VST3, extension: .vst3, name: VST3 }
+  - {
+      path: /Library/Application Support/Avid/Audio/Plug-Ins,
+      extension: .aaxplugin,
+      name: AAX,
+    }
+  - {
+      path: /Library/Audio/Plug-Ins/Components,
+      etension: .au,
+      name: Audio Units,
+    }
+  - {
+      path: /Library/Application Support/Universal Audio/UAD-2 Powered Plugins,
+      extension: .dll,
+      name: Console,
+    }
