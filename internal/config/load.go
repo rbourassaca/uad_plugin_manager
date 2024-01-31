@@ -3,6 +3,7 @@ package config
 import (
 	"os"
 	"path/filepath"
+	"runtime"
 
 	"github.com/spf13/viper"
 )
@@ -37,7 +38,11 @@ func Load() {
 	Appdata = filepath.Join(userConfigDir, "/UAD-Plugin-Manager")
 	RemovedPluginDir = filepath.Join(Appdata, "/Plugins")
 	os.Mkdir(Appdata, os.ModePerm)
-	viper.SetConfigFile(filepath.FromSlash("./configs/config.yaml"))
+	if runtime.GOOS == "windows" {
+		viper.SetConfigFile(filepath.FromSlash("./configs/config.win.yaml"))
+	} else if runtime.GOOS == "darwin" {
+		viper.SetConfigFile(filepath.FromSlash("./configs/config.osx.yaml"))
+	}
 	viper.ReadInConfig()
 	viper.SetConfigFile(filepath.FromSlash("./configs/pluginDefinition.yaml"))
 	viper.MergeInConfig()
