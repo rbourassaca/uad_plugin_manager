@@ -27,19 +27,19 @@ type (
 
 var Config ConfigType
 var Appdata string
-
-const RemovedPluginDir = "/Plugins"
+var RemovedPluginDir string
 
 func Load() {
 	userConfigDir, err := os.UserConfigDir()
 	if err != nil {
 		os.Exit(1)
 	}
-	Appdata = userConfigDir + "/UAD-Plugin-Manager"
+	Appdata = filepath.Join(userConfigDir, "/UAD-Plugin-Manager")
+	RemovedPluginDir = filepath.Join(Appdata, "/Plugins")
 	os.Mkdir(Appdata, os.ModePerm)
-	viper.SetConfigFile("./configs/config.yaml")
+	viper.SetConfigFile(filepath.FromSlash("./configs/config.yaml"))
 	viper.ReadInConfig()
-	viper.SetConfigFile("./configs/pluginDefinition.yaml")
+	viper.SetConfigFile(filepath.FromSlash("./configs/pluginDefinition.yaml"))
 	viper.MergeInConfig()
 	viper.UnmarshalExact(&Config)
 	clean()

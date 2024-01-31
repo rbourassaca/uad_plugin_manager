@@ -17,8 +17,8 @@ func MovePlugins(pluginsToRemove []string) {
 		pluginFormatName := config.Config.PluginFormats[i].Name
 		for x := 0; x < len(pluginsToRemove); x++ {
 			currentPath := GetPluginPaths(pluginsToRemove[x], glob)
-			pluginLocation := strings.TrimPrefix(currentPath, filepath.FromSlash(config.Config.PluginFormats[i].Path))
-			newPath := filepath.Join(config.Appdata, config.RemovedPluginDir, pluginFormatName, pluginLocation)
+			pluginLocation := strings.TrimPrefix(currentPath, config.Config.PluginFormats[i].Path)
+			newPath := filepath.Join(config.RemovedPluginDir, pluginFormatName, pluginLocation)
 			err := files.Move(currentPath, newPath)
 			fmt.Println(err)
 		}
