@@ -16,7 +16,9 @@ var removeCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		unlicensed, _ := cmd.Flags().GetBool("unlicensed")
 		if unlicensed {
-			unlicensedPlugins := plugins.GetPluginsToRemove(files.Find(files.Open(config.Config.Files.UADSystemProfile), ": Demo not started", true))
+			UADSystemProfile := files.Open(config.Config.Files.UADSystemProfile)
+			pluginsToRemove := files.Find(UADSystemProfile, []string{": Demo not started"}, true) //Need to add what is written in UADSystemProfile when demo is over, will update when I have a demo that's over
+			unlicensedPlugins := plugins.GetPluginsToRemove(pluginsToRemove)
 			plugins.MovePlugins(unlicensedPlugins)
 		} else {
 			fmt.Println("No plugins were selected.")
