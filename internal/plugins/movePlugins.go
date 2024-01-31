@@ -5,6 +5,7 @@ import (
 	"path/filepath"
 	"rbourassa/uadPluginManager/internal/config"
 	"rbourassa/uadPluginManager/internal/files"
+	"slices"
 	"strings"
 )
 
@@ -14,20 +15,16 @@ func MovePlugins(pluginsToMove []string) {
 		if len(glob) == 0 {
 			glob, _ = filepath.Glob(config.Config.PluginFormats[i].Path + "/**/*" + config.Config.PluginFormats[i].Extension)
 		}
-		pluginFormatName := config.Config.PluginFormats[i].Name
 		for x := 0; x < len(pluginsToMove); x++ {
-			currentPath := GetPluginPaths(pluginsToMove[x], glob)
-			for _, currentGlob := range glob {
-				if currentGlob == currentPath {
-					pluginLocation := strings.TrimPrefix(currentPath, config.Config.PluginFormats[i].Path)
-					newPath := filepath.Join(config.RemovedPluginDir, pluginFormatName, pluginLocation)
-					err := files.Move(currentPath, newPath)
-					if err != nil {
-						fmt.Println(err)
-					}
+			currentPath := GetPluginPaths(pluginsToMove[x], config.Config.PluginFormats[i].Extension, glob)
+			if slices.Contains(glob, currentPath) {
+				pluginLocation := strings.TrimPrefix(currentPath, config.Config.PluginFormats[i].Path)
+				newPath := filepath.Join(config.RemovedPluginDir, config.Config.PluginFormats[i].Name, pluginLocation)
+				err := files.Move(currentPath, newPath)
+				if err != nil {
+					fmt.Println(err.Error())
 				}
 			}
-
 		}
 	}
 }
