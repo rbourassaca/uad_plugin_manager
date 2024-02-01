@@ -1,4 +1,4 @@
-# Config for mac os need to be tested.
+#TODO: Test the mac config.
 files:
   UADSystemProfile: ./configs/UADSystemProfile.txt
 pluginFormats:
@@ -20,6 +20,6 @@ pluginFormats:
     }
   - {
       path: /Library/Application Support/Universal Audio/UAD-2 Powered Plugins,
-      extension: .dll,
+      extension: .vst,
       name: Console,
     }
