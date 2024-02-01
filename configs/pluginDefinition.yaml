@@ -9,6 +9,25 @@ pluginDefinition:
     - UAD ADA STD-1 Stereo Tapped Delay
   UAD AKG BX 20 Spring Reverb:
     - UAD AKG BX 20
+  UAD AMS DMX 15-80 S Digital Delay and Pitch Shifter:
+    - UAD AMS DMX 15-80 S
+  UAD AMS Neve DFC Channel Strip:
+    - UAD AMS Neve DFC Channel Strip
+  UAD AMS RMX16 Digital Reverb:
+    - UAD AMS RMX16
+  UAD AMS RMX16 Expanded Digital Reverb:
+    - UAD AMS RMX16 Expanded
+  UAD API 2500 Bus Compressor:
+    - UAD API 2500
+  UAD API 500 EQ Collection:
+    - UAD API 550A
+    - UAD API 560
+  UAD API Preamp:
+    - UAD API Preamp
+  UAD API Vision Channel Strip Collection:
+    - UAD API Vision Channel Strip
+  UAD API Vision Channel Strip Legacy:
+    - UAD API Vision Channel Strip Legacy
   UAD Ampeg B15N Bass Amplifier:
     - UAD Ampeg B15N
   UAD Ampeg SVT-3 Pro Bass Amplifier:
@@ -19,27 +38,8 @@ pluginDefinition:
     - UAD Ampeg SVTVR Classic
   UAD Ampex ATR-102 Tape Recorder:
     - UAD Ampex ATR-102
-  UAD AMS DMX 15-80 S Digital Delay and Pitch Shifter:
-    - UAD AMS DMX 15-80 S
-  UAD AMS Neve DFC Channel Strip:
-    - UAD AMS Neve DFC Channel Strip
-  UAD AMS RMX16 Digital Reverb:
-    - UAD AMS RMX16
-  UAD AMS RMX16 Expanded Digital Reverb:
-    - UAD AMS RMX16 Expanded
   UAD Antares Auto-Tune Realtime:
     - UAD Antares Auto-Tune Realtime
-  UAD API 500 EQ Collection:
-    - UAD API 550A
-    - UAD API 560
-  UAD API 2500 Bus Compressor:
-    - UAD API 2500
-  UAD API Preamp:
-    - UAD API Preamp
-  UAD API Vision Channel Strip Collection:
-    - UAD API Vision Channel Strip
-  UAD API Vision Channel Strip Legacy:
-    - UAD API Vision Channel Strip Legacy
   UAD Auto-Tune Realtime Access:
     - UAD Auto-Tune Realtime Access
   UAD Auto-Tune Realtime Advanced:
@@ -50,24 +50,6 @@ pluginDefinition:
     - UAD Bermuda Triangle
   UAD Brigade Chorus:
     - UAD Brigade Chorus
-  UAD bx_digital V2 EQ:
-    - UAD bx_digital V2 Mono
-    - UAD bx_digital V2
-  UAD bx_digital V3 EQ Collection:
-    - UAD bx_digital V3 mix
-    - UAD bx_digital V3
-  UAD bx_masterdesk:
-    - UAD bx_masterdesk
-  UAD bx_masterdesk Classic:
-    - UAD bx_masterdesk Classic
-  UAD bx_refinement:
-    - UAD bx_refinement
-  UAD bx_saturator V2:
-    - UAD bx_saturator V2
-  UAD bx_subsynth Subharmonic Synth:
-    - UAD bx_subsynth
-  UAD bx_tuner:
-    - UAD bx_tuner
   UAD C-Suite C-Axe Guitar Noise Suppressor:
     - UAD C-Suite C-Axe
   UAD C-Suite C-Max Limiter:
@@ -91,8 +73,6 @@ pluginDefinition:
   UAD Dangerous BAX EQ Collection:
     - UAD Dangerous BAX EQ Master
     - UAD Dangerous BAX EQ Mix
-  UAD dbx 160 Compressor:
-    - UAD dbx 160
   UAD Diezel Herbert Amplifier:
     - UAD Diezel Herbert
   UAD Diezel VH4 Amplifier:
@@ -103,18 +83,6 @@ pluginDefinition:
     - UAD Dytronics Cyclosonic Panner
   UAD Dytronics Tri-Stereo Chorus:
     - UAD Dytronics Tri-Stereo Chorus
-  UAD Eden WT800 Bass Amplifier:
-    - UAD Eden WT800
-  UAD elysia alpha compressor:
-    - UAD elysia alpha master
-    - UAD elysia alpha mix
-  UAD elysia mpressor:
-    - UAD elysia mpressor
-  UAD Empirical Labs EL7 FATSO Compressor:
-    - UAD Empirical Labs FATSO Jr
-    - UAD Empirical Labs FATSO Sr
-  UAD Empirical Labs EL8 Distressor Compressor:
-    - UAD Empirical Labs Distressor
   UAD EMT 140 Plate Reverb:
     - UAD EMT 140
   UAD EMT 250 Digital Reverb:
@@ -127,6 +95,13 @@ pluginDefinition:
     - UAD ENGL Savage 120
   UAD EP-34 Tape Echo:
     - UAD EP-34 Tape Echo
+  UAD Eden WT800 Bass Amplifier:
+    - UAD Eden WT800
+  UAD Empirical Labs EL7 FATSO Compressor:
+    - UAD Empirical Labs FATSO Jr
+    - UAD Empirical Labs FATSO Sr
+  UAD Empirical Labs EL8 Distressor Compressor:
+    - UAD Empirical Labs Distressor
   UAD Eventide H910 Harmonizer:
     - UAD Eventide H910 Harmonizer
   UAD Fairchild 670 Legacy Limiter:
@@ -175,6 +150,8 @@ pluginDefinition:
     - UAD Little Labs IBP
   UAD Little Labs VOG Bass Enhancer:
     - UAD Little Labs VOG
+  UAD MXR Flanger-Doubler:
+    - UAD MXR Flanger-Doubler
   UAD Maag EQ4 EQ:
     - UAD Maag EQ4
   UAD Manley Massive Passive EQ Collection:
@@ -182,10 +159,10 @@ pluginDefinition:
     - UAD Manley Massive Passive
   UAD Manley Reference Microphone Preamplifier:
     - UAD Manley Reference Mic Preamp
-  UAD Manley Variable Mu Limiter:
-    - UAD Manley Variable Mu
   UAD Manley VOXBOX Channel Strip:
     - UAD Manley VOXBOX
+  UAD Manley Variable Mu Limiter:
+    - UAD Manley Variable Mu
   UAD Marshall Bluesbreaker 1962 Amplifier:
     - UAD Marshall Bluesbreaker 1962
   UAD Marshall JMP 2203 Amplifier:
@@ -206,12 +183,6 @@ pluginDefinition:
     - UAD Moog Multimode Filter XL
   UAD Moog Multimode Legacy Filter:
     - UAD Moog Multimode Filter
-  UAD MXR Flanger-Doubler:
-    - UAD MXR Flanger-Doubler
-  UAD Neve 88RS Channel Strip Collection:
-    - UAD Neve 88RS
-  UAD Neve 88RS Legacy Channel Strip:
-    - UAD Neve 88RS Legacy
   UAD Neve 1073 Legacy EQ:
     - UAD Neve 1073 Legacy
     - UAD Neve 1073SE Legacy
@@ -228,24 +199,28 @@ pluginDefinition:
   UAD Neve 33609 Stereo Limiter Compressor:
     - UAD Neve 33609 C
     - UAD Neve 33609SE
+  UAD Neve 88RS Channel Strip Collection:
+    - UAD Neve 88RS
+  UAD Neve 88RS Legacy Channel Strip:
+    - UAD Neve 88RS Legacy
   UAD Neve Dynamics Collection:
     - UAD Neve 2254 E
     - UAD Neve 2254 E Dual
   UAD Neve Preamp:
     - UAD Neve Preamp
+  UAD OTO Biscuit 8-bit Filter Effects:
+    - UAD OTO Biscuit 8-bit Effects
   UAD Ocean Way Microphone Collection:
     - UAD Ocean Way Mic Collection 180
     - UAD Ocean Way Mic Collection
   UAD Ocean Way Studios Room Modeler:
     - UAD Ocean Way Studios
-  UAD OTO Biscuit 8-bit Filter Effects:
-    - UAD OTO Biscuit 8-bit Effects
   UAD Oxford Dynamic EQ:
     - UAD Oxford Dynamic EQ
-  UAD Oxford Envolution Envelope Shaper:
-    - UAD Oxford Envolution
   UAD Oxford EQ:
     - UAD Oxford EQ
+  UAD Oxford Envolution Envelope Shaper:
+    - UAD Oxford Envolution
   UAD Oxford Inflator:
     - UAD Oxford Inflator
   UAD Oxford Limiter V2:
@@ -300,6 +275,20 @@ pluginDefinition:
     - UAD Roland Dimension D
   UAD Roland RE-201 Tape Delay:
     - UAD Roland RE-201
+  UAD SPL Transient Designer:
+    - UAD SPL Transient Designer
+  UAD SPL TwinTube Saturation:
+    - UAD SPL TwinTube
+  UAD SPL Vitalizer MK2-T:
+    - UAD SPL Vitalizer MK2-T
+  UAD SSL 4000 E Channel Strip Collection:
+    - UAD SSL E Channel Strip
+  UAD SSL 4000 E Legacy Channel Strip:
+    - UAD SSL E Channel Strip Legacy
+  UAD SSL 4000 G Bus Compressor Collection:
+    - UAD SSL G Bus Compressor
+  UAD SSL 4000 G Legacy Bus Compressor:
+    - UAD SSL G Bus Compressor Legacy
   UAD Shadow Hills Mastering Compressor:
     - UAD Shadow Hills Mastering Compressor
   UAD Softube Amp Room Half-Stack:
@@ -319,20 +308,6 @@ pluginDefinition:
   UAD Sphere Mic Collection:
     - UAD Sphere Mic Collection 180
     - UAD Sphere Mic Collection
-  UAD SPL Transient Designer:
-    - UAD SPL Transient Designer
-  UAD SPL TwinTube Saturation:
-    - UAD SPL TwinTube
-  UAD SPL Vitalizer MK2-T:
-    - UAD SPL Vitalizer MK2-T
-  UAD SSL 4000 E Channel Strip Collection:
-    - UAD SSL E Channel Strip
-  UAD SSL 4000 E Legacy Channel Strip:
-    - UAD SSL E Channel Strip Legacy
-  UAD SSL 4000 G Bus Compressor Collection:
-    - UAD SSL G Bus Compressor
-  UAD SSL 4000 G Legacy Bus Compressor:
-    - UAD SSL G Bus Compressor Legacy
   UAD Studer A800 Tape Recorder:
     - UAD Studer A800
   UAD Studio D Chorus:
@@ -343,6 +318,8 @@ pluginDefinition:
     - UAD Suhr SE100
   UAD Summit Audio TLA-100A Compressor:
     - UAD Summit Audio TLA-100A
+  UAD TS Overdrive:
+    - UAD TS Overdrive
   UAD Teletronix LA-2A Legacy Leveler:
     - UAD Teletronix LA-2A Legacy
   UAD Teletronix LA-2A Leveler Collection:
@@ -358,8 +335,6 @@ pluginDefinition:
     - UAD Tonelux Tilt
   UAD Trident A-Range EQ:
     - UAD Trident A-Range
-  UAD TS Overdrive:
-    - UAD TS Overdrive
   UAD Tube-Tech CL 1B Compressor:
     - UAD Tube-Tech CL 1B
   UAD Tube-Tech CL 1B mk II:
@@ -367,13 +342,6 @@ pluginDefinition:
   UAD Tube-Tech EQ Collection:
     - UAD Tube-Tech ME 1B
     - UAD Tube-Tech PE 1C
-  UAD UA 175B and 176 Tube Compressor Collection:
-    - UAD UA 175-B
-    - UAD UA 176
-  UAD UA 610-A Tube Preamp and EQ:
-    - UAD UA 610-A
-  UAD UA 610-B Tube Preamp and EQ:
-    - UAD UA 610-B
   UAD UA 1176 Limiter Collection:
     - UAD UA 1176 Rev A
     - UAD UA 1176AE
@@ -382,6 +350,13 @@ pluginDefinition:
     - UAD UA 1176LN Legacy
   UAD UA 1176SE Legacy Limiter:
     - UAD UA 1176SE Legacy
+  UAD UA 175B and 176 Tube Compressor Collection:
+    - UAD UA 175-B
+    - UAD UA 176
+  UAD UA 610-A Tube Preamp and EQ:
+    - UAD UA 610-A
+  UAD UA 610-B Tube Preamp and EQ:
+    - UAD UA 610-B
   UAD V76 Preamp:
     - UAD V76 Preamp
   UAD Valley People Dyna-mite Dynamics:
@@ -390,3 +365,28 @@ pluginDefinition:
     - UAD Vertigo VSC-2
   UAD Vertigo VSM-3 Saturator:
     - UAD Vertigo VSM-3
+  UAD bx_digital V2 EQ:
+    - UAD bx_digital V2 Mono
+    - UAD bx_digital V2
+  UAD bx_digital V3 EQ Collection:
+    - UAD bx_digital V3 mix
+    - UAD bx_digital V3
+  UAD bx_masterdesk:
+    - UAD bx_masterdesk
+  UAD bx_masterdesk Classic:
+    - UAD bx_masterdesk Classic
+  UAD bx_refinement:
+    - UAD bx_refinement
+  UAD bx_saturator V2:
+    - UAD bx_saturator V2
+  UAD bx_subsynth Subharmonic Synth:
+    - UAD bx_subsynth
+  UAD bx_tuner:
+    - UAD bx_tuner
+  UAD dbx 160 Compressor:
+    - UAD dbx 160
+  UAD elysia alpha compressor:
+    - UAD elysia alpha master
+    - UAD elysia alpha mix
+  UAD elysia mpressor:
+    - UAD elysia mpressor
