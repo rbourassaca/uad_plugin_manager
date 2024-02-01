@@ -1,9 +1,7 @@
 package cmd
 
 import (
-	"fmt"
-	"rbourassa/uadPluginManager/internal/config"
-	"strings"
+	"rbourassa/uadPluginManager/internal/plugins"
 
 	"github.com/spf13/cobra"
 )
@@ -15,12 +13,7 @@ var listCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		all, _ := cmd.Flags().GetBool("all")
 		if all {
-			for collection, plugins := range config.Config.PluginDefinition {
-				fmt.Println("\n" + collection)
-				for _, value := range plugins {
-					fmt.Println("|--> " + strings.ToLower(value))
-				}
-			}
+			plugins.ListAllPlugins()
 		}
 	},
 }
