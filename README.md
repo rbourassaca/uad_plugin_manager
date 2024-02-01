@@ -26,7 +26,7 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 - Remove specific collections of plugins `remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"`
 - Display all available collections and the plugins they contain `list -a`
 
-### Examples (development)
+### Examples
 
 - `go run . remove -u`
 - `go run . remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"`
