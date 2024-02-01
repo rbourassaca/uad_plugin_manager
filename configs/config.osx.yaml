@@ -7,6 +7,11 @@ pluginFormats:
       extension: .vst,
       name: VST2,
     }
+  - {
+      path: /Library/Audio/Plug-Ins/VST/Universal Audio/mono,
+      extension: (m).vst,
+      name: VST2 (Mono),
+    }
   - { path: /Library/Audio/Plug-ins/VST3, extension: .vst3, name: VST3 }
   - {
       path: /Library/Application Support/Avid/Audio/Plug-Ins,
