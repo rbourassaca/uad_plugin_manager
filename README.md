@@ -16,28 +16,23 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 
 1. Have [GO](https://go.dev/) installed and working
 2. Clone or download the repository
-3. Place your `UADSystemProfile.txt` in the `./configs/` folder
+3. Place your `UADSystemProfile.txt` in the `./configs/` folder [^1]
 4. Open the terminal in the directory you just downloaded
 5. Install the project dependency ` go get .`
 6. Run de project using `go run .`, you'll see available commands in the terminal.
 
-### How to get my UADSystemProfile.txt
-
-1. Be sure your audio interface is open and connected
-2. Open `UAD Meter & Control Panel`
-3. Click on the hamburger menu and click `System Info...`
-4. In the new window, be sure to be in the System Info tab and click `Save Detailed System Profile` at the bottom of the page
-
 ### Commands
 
-- Remove all unlicensed plugins `remove -u` [^1]
-- Remove specific collections of plugins `remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^1]
+- Remove all unlicensed plugins `remove -u` [^2]
+- Remove specific collections of plugins `remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
 - Display all available collections and the plugins they contain `list -a`
 
 ### Examples
 
-- `go run . remove -u` [^1]
-- `go run . remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^1]
+- `go run . remove -u` [^2]
+- `go run . remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
 - `go run . list -a`
 
-[^1]: Some commands may need to run with elevated privileges since they handle protected files. On windows you'll need to run the terminal as an administrator before using the commands and on Mac OS X you'll need to prepend sudo to the commands.
+
+[^1]: To get your UADSystemProfile.txt be sure your audio interface is open and connected, open `UAD Meter & Control Panel`, click on the hamburger menu and click `System Info...`. In the new window, be sure to be in the System Info tab and click `Save Detailed System Profile` at the bottom of the page
+[^2]: Some commands may need to run with elevated privileges since they handle protected files. On windows you'll need to run the terminal as an administrator before using the commands and on Mac OS X you'll need to prepend sudo to the commands.
