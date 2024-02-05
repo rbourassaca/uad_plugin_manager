@@ -1,4 +1,3 @@
-#TODO: Test the mac config.
 files:
   UADSystemProfile: ./configs/UADSystemProfile.txt
 pluginFormats:
@@ -8,19 +7,23 @@ pluginFormats:
       name: VST2,
     }
   - {
-      path: /Library/Audio/Plug-Ins/VST/Universal Audio/mono,
+      path: /Library/Audio/Plug-Ins/VST/Universal Audio/UAD Mono,
       extension: (m).vst,
       name: VST2 (Mono),
     }
-  - { path: /Library/Audio/Plug-ins/VST3, extension: .vst3, name: VST3 }
   - {
-      path: /Library/Application Support/Avid/Audio/Plug-Ins,
+      path: /Library/Audio/Plug-ins/VST3/Universal Audio,
+      extension: .vst3,
+      name: VST3,
+    }
+  - {
+      path: /Library/Application Support/Avid/Audio/Plug-Ins/Universal Audio,
       extension: .aaxplugin,
       name: AAX,
     }
   - {
       path: /Library/Audio/Plug-Ins/Components,
-      etension: .au,
+      etension: .component,
       name: Audio Units,
     }
   - {
