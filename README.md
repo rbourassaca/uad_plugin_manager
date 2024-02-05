@@ -30,12 +30,14 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 
 ### Commands
 
-- Remove all unlicensed plugins `remove -u`
-- Remove specific collections of plugins `remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"`
+- Remove all unlicensed plugins `remove -u` [^1]
+- Remove specific collections of plugins `remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^1]
 - Display all available collections and the plugins they contain `list -a`
 
 ### Examples
 
-- `go run . remove -u`
-- `go run . remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"`
+- `go run . remove -u` [^1]
+- `go run . remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^1]
 - `go run . list -a`
+
+[^1]: Some commands may need to run with elevated privileges since they handle protected files. On windows you'll need to run the terminal as an administrator before using the commands and on Mac OS X you'll need to prepend sudo to the commands.
