@@ -23,7 +23,7 @@ pluginFormats:
     }
   - {
       path: /Library/Audio/Plug-Ins/Components,
-      etension: .component,
+      extension: .component,
       name: Audio Units,
     }
   - {
