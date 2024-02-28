@@ -16,7 +16,7 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 
 1. Have [GO](https://go.dev/) installed and working
 2. Clone or download the repository
-3. Place your `UADSystemProfile.txt` in the `./configs/` folder [^1]
+3. Place your `UADSystemProfile.txt` in the same folder as the executable [^1]
 4. Open the terminal in the directory you just downloaded
 5. Install the project dependency `go get .`
 6. Run de project using `go run .`, you'll see available commands in the terminal.
