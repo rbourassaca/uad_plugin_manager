@@ -1,5 +1,5 @@
 files:
-  UADSystemProfile: ./configs/UADSystemProfile.txt
+  UADSystemProfile: ./UADSystemProfile.txt
 pluginFormats:
   - {
       path: /Library/Audio/Plug-Ins/VST/Universal Audio,
