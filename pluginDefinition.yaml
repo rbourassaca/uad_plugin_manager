@@ -40,6 +40,8 @@ pluginDefinition:
     - UAD Ampex ATR-102
   UAD Antares Auto-Tune Realtime:
     - UAD Antares Auto-Tune Realtime
+  UAD Antares Auto-Tune Realtime X:
+    - UAD Auto-Tune Realtime X
   UAD Auto-Tune Realtime Access:
     - UAD Auto-Tune Realtime Access
   UAD Auto-Tune Realtime Advanced:
