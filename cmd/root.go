@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"os"
-
 	"github.com/spf13/cobra"
+	"os"
+	"rbourassa/uadPluginManager/internal/config"
 )
 
 var rootCmd = &cobra.Command{
@@ -20,6 +20,7 @@ func Execute() {
 }
 
 func init() {
+	config.Load()
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
