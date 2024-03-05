@@ -18,7 +18,7 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 ### Commands
 
 - Remove all unlicensed plugins `remove -u` [^3]
-- Remove specific collections of plugins `remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
+- Remove specific collections of plugins `remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^3]
 - Display all available collections and the plugins they contain `list -a`
 
 ### Examples
