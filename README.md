@@ -4,16 +4,16 @@ UAD Plugin Manager is a simple tool used to manage Universal Audio DSP powered p
 
 ## Why?
 
-When you install or upgrade the drivers for your Universal Audio interface, the installer reinstalls every plugins. Even if you don't own them. This makes browsing plugins in a DAW harder since you need to remember exactly which one you own.
+When you install or upgrade the drivers for your Universal Audio interface, the installer reinstalls every plugins. Even if you don't own them. This makes browsing plugins harder since you need to remember exactly which one you own.
 
-You could hide or remove the plugins by hand, but, with every update it becomes a time consuming process. This tool was created to simplify this process.
+You can hide or remove the plugins by hand, but, with every update it becomes a time consuming process. This tool was created to simplify this process.
 
 ## How to use
 
 1. Download the latest release & extract the content in a folder.
 2. Place your `UADSystemProfile.txt` in the same folder as the executable [^1][^2]
 3. Open the terminal in the folder containing the executable.
-4. Run de project using `uadPluginManager`, you'll see available commands in the terminal.
+4. Run de project using `uad_plugin_manager`, you'll see available commands in the terminal.
 
 ### Commands
 
@@ -26,6 +26,7 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 - `uadPluginManager remove -u` [^3]
 - `uadPluginManager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^3]
 - `uadPluginManager list -a`
+
 
 ### Screenshots
 
