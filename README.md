@@ -13,7 +13,7 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 1. Download the latest release & extract the content in a folder.
 2. Place your `UADSystemProfile.txt` in the same folder as the executable [^1]
 3. Open the terminal in the folder containing the executable.
-4. Run de project using `uadPluginManager`, you'll see available commands in the terminal.
+4. Run de project using `uad_plugin_manager`, you'll see available commands in the terminal.
 
 ### Commands
 
@@ -23,9 +23,9 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 
 ### Examples
 
-- `uadPluginManager remove -u` [^2]
-- `uadPluginManager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
-- `uadPluginManager list -a`
+- `uad_plugin_manager remove -u` [^2]
+- `uad_plugin_manager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
+- `uad_plugin_manager list -a`
 
 
 [^1]: To get your UADSystemProfile.txt be sure your audio interface is open and connected, open `UAD Meter & Control Panel`, click on the hamburger menu and click `System Info...`. In the new window, be sure to be in the System Info tab and click `Save Detailed System Profile` at the bottom of the page
