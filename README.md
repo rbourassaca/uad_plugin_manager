@@ -1,7 +1,3 @@
-⚠️ Currently in development, it's expected to have bugs and missing features, no builds will be provided during the development process. ⚠️
-
----
-
 # UAD Plugin Manager
 
 UAD Plugin Manager is a simple tool used to manage Universal Audio DSP powered plugins.
@@ -12,14 +8,12 @@ When you install or upgrade the drivers for your Universal Audio interface, the 
 
 You could hide or remove the plugins by hand, but, with every update it becomes a time consuming process. This tool was created to simplify this process.
 
-## How to use (development)
+## How to use
 
-1. Have [GO](https://go.dev/) installed and working
-2. Clone or download the repository
-3. Place your `UADSystemProfile.txt` in the same folder as the executable [^1]
-4. Open the terminal in the directory you just downloaded
-5. Install the project dependency `go get .`
-6. Run de project using `go run .`, you'll see available commands in the terminal.
+1. Download the latest release & extract the content in a folder.
+2. Place your `UADSystemProfile.txt` in the same folder as the executable [^1]
+3. Open the terminal in the folder containing the executable.
+4. Run de project using `uadPluginManager`, you'll see available commands in the terminal.
 
 ### Commands
 
@@ -29,9 +23,9 @@ You could hide or remove the plugins by hand, but, with every update it becomes 
 
 ### Examples
 
-- `go run . remove -u` [^2]
-- `go run . remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
-- `go run . list -a`
+- `uadPluginManager remove -u` [^2]
+- `uadPluginManager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
+- `uadPluginManager list -a`
 
 
 [^1]: To get your UADSystemProfile.txt be sure your audio interface is open and connected, open `UAD Meter & Control Panel`, click on the hamburger menu and click `System Info...`. In the new window, be sure to be in the System Info tab and click `Save Detailed System Profile` at the bottom of the page
