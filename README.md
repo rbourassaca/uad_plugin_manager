@@ -27,7 +27,7 @@ You can hide or remove the plugins by hand, but, with every update it becomes a 
 - `uadPluginManager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
 - `uadPluginManager list -a`
 
-### Configuration
+## Configuration
 
 UAD Plugin Manager checks for configuration files in two directories in this specific order:
 1. The same directory as the executable.
@@ -39,13 +39,13 @@ If configuration files aren't found, the latest ones will be downloaded from thi
 
 Configuration files in the same directory as the executable file will always have priority.
 
-### Screenshots
+## Screenshots
 
 ![Terminal preview](./docs/assets/images/terminal-preview.png)
 ![UAD Console preview](./docs/assets/images/uad-console-plugins-preview.png)
 ![Reaper FX Browser preview](./docs/assets/images/reaper-plugins-preview.png)
 
-### FAQ
+## FAQ
 
 - Executable is detected as a virus, why is that?
   - This is a problem related to the structure of the compiled go binaries, you can get more information [here](https://go.dev/doc/faq#virus).
