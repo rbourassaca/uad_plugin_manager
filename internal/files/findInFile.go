@@ -2,12 +2,12 @@ package files
 
 import (
 	"bufio"
-	"log"
+	"fmt"
 	"os"
 	"strings"
 )
 
-func Find(file *os.File, text []string, crop bool) []string {
+func FindInFile(file *os.File, text []string, crop bool) []string {
 	var list []string
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
@@ -22,7 +22,8 @@ func Find(file *os.File, text []string, crop bool) []string {
 		}
 	}
 	if err := scanner.Err(); err != nil {
-		log.Fatal(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 	return list
 }

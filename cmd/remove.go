@@ -19,7 +19,7 @@ var removeCmd = &cobra.Command{
 		if unlicensed {
 			fmt.Println("Removing all unlicensed collections")
 			UADSystemProfile := files.Open(config.Config.Files.UADSystemProfile)
-			pluginsToRemove := files.Find(UADSystemProfile, []string{": Demo not started", ": Demo expired"}, true)
+			pluginsToRemove := files.FindInFile(UADSystemProfile, []string{": Demo not started", ": Demo expired"}, true)
 			unlicensedPlugins := plugins.GetPluginsToRemove(pluginsToRemove)
 			plugins.MovePlugins(unlicensedPlugins)
 		}
