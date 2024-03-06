@@ -6,6 +6,7 @@ import (
 	"io/fs"
 	"os"
 	"path/filepath"
+	"rbourassa/uadPluginManager/internal/files"
 	"runtime"
 
 	"github.com/spf13/viper"
@@ -32,6 +33,9 @@ type (
 var Config Type
 var Appdata string
 var RemovedPluginDir string
+var gitRepository = "https://raw.githubusercontent.com/rbourassaca/uad_plugin_manager/main/"
+var configFileName = "config." + runtime.GOOS + ".yaml"
+var pluginDefinitionFileName = "pluginDefinition.yaml"
 
 func Load() {
 	initEnv()
@@ -56,25 +60,15 @@ func initEnv() {
 }
 
 func handleConfigFiles() {
-	viper.AddConfigPath(Appdata)
 	viper.AddConfigPath(filepath.Clean("./"))
+	viper.AddConfigPath(Appdata)
 	viper.SetConfigType("yaml")
 
-	viper.SetConfigName("config." + runtime.GOOS)
-	err := viper.ReadInConfig()
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
-	}
+	loadConfigFile(configFileName)
+	loadConfigFile(pluginDefinitionFileName)
 
-	viper.SetConfigName("pluginDefinition")
-	err = viper.MergeInConfig()
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
-	}
+	err := viper.UnmarshalExact(&Config)
 
-	err = viper.UnmarshalExact(&Config)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -85,5 +79,24 @@ func cleanPaths() {
 	Config.Files.UADSystemProfile = filepath.Clean(Config.Files.UADSystemProfile)
 	for i := 0; i < len(Config.PluginFormats); i++ {
 		Config.PluginFormats[i].Path = filepath.Clean(Config.PluginFormats[i].Path)
+	}
+}
+
+func loadConfigFile(name string) {
+	viper.SetConfigName(name)
+	err := viper.ReadInConfig()
+	if err != nil {
+		if errors.Is(err, err.(viper.ConfigFileNotFoundError)) {
+			err := files.Download(Appdata, gitRepository+name)
+			if err == nil {
+				loadConfigFile(name)
+			} else {
+				fmt.Println(err)
+				os.Exit(1)
+			}
+		} else {
+			fmt.Println(err)
+			os.Exit(1)
+		}
 	}
 }
