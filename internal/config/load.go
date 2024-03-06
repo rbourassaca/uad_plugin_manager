@@ -67,6 +67,8 @@ func handleConfigFiles() {
 	loadConfigFile(configFileName)
 	loadConfigFile(pluginDefinitionFileName)
 
+	searchUADSystemProfile()
+
 	err := viper.UnmarshalExact(&Config)
 
 	if err != nil {
@@ -99,4 +101,13 @@ func loadConfigFile(name string) {
 			os.Exit(1)
 		}
 	}
+}
+
+func searchUADSystemProfile() {
+	path, err := files.Find("UADSystemProfile.txt", []string{"./", Appdata})
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	Config.Files.UADSystemProfile = path
 }
