@@ -67,18 +67,16 @@ func handleConfigFiles() {
 	loadConfigFile(configFileName)
 	loadConfigFile(pluginDefinitionFileName)
 
-	searchUADSystemProfile()
-
 	err := viper.UnmarshalExact(&Config)
-
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+
+	Config.Files.UADSystemProfile = searchUADSystemProfile()
 }
 
 func cleanPaths() {
-	Config.Files.UADSystemProfile = filepath.Clean(Config.Files.UADSystemProfile)
 	for i := 0; i < len(Config.PluginFormats); i++ {
 		Config.PluginFormats[i].Path = filepath.Clean(Config.PluginFormats[i].Path)
 	}
@@ -103,11 +101,11 @@ func loadConfigFile(name string) {
 	}
 }
 
-func searchUADSystemProfile() {
+func searchUADSystemProfile() string {
 	path, err := files.Find("UADSystemProfile.txt", []string{"./", Appdata})
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	Config.Files.UADSystemProfile = path
+	return path
 }
