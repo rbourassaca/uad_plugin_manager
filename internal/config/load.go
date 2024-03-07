@@ -86,7 +86,7 @@ func cleanPaths() {
 
 func loadConfigFile(name string) {
 	viper.SetConfigName(name)
-	err := viper.ReadInConfig()
+	err := viper.MergeInConfig()
 	if err != nil {
 		if errors.Is(err, err.(viper.ConfigFileNotFoundError)) {
 			err := files.Download(Appdata, gitRepository+name)
