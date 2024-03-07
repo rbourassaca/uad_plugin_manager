@@ -1,28 +1,19 @@
 package files
 
 import (
-	"bufio"
-	"log"
+	"errors"
+	"fmt"
 	"os"
-	"strings"
+	"path/filepath"
 )
 
-func Find(file *os.File, text []string, crop bool) []string {
-	var list []string
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		for i := 0; i < len(text); i++ {
-			if strings.Contains(scanner.Text(), text[i]) {
-				line := scanner.Text()
-				if crop {
-					line = strings.Split(line, text[i])[0]
-				}
-				list = append(list, line)
-			}
+func Find(name string, directory []string) (string, error) {
+	for i := 0; i < len(directory); i++ {
+		path := filepath.Join(directory[i], name)
+		_, err := os.Stat(path)
+		if !errors.Is(err, os.ErrNotExist) {
+			return path, nil
 		}
 	}
-	if err := scanner.Err(); err != nil {
-		log.Fatal(err)
-	}
-	return list
+	return "", fmt.Errorf("unable to find %s in %s", name, directory)
 }

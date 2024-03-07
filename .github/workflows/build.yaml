@@ -25,4 +25,3 @@ jobs:
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
           executable_compression: upx
-          extra_files: ./config.${{ matrix.goos }}.yaml ./pluginDefinition.yaml
