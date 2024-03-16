@@ -23,9 +23,9 @@ You can hide or remove the plugins by hand, but, with every update it becomes a 
 
 ### Examples
 
-- `uadPluginManager remove -u` [^2]
-- `uadPluginManager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
-- `uadPluginManager list -a`
+- `uad_plugin_manager remove -u` [^2]
+- `uad_plugin_manager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
+- `uad_plugin_manager list -a`
 
 ## Configuration
 
