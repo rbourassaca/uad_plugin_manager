@@ -12,7 +12,7 @@ import (
 // updateCmd represents the list command
 var updateCmd = &cobra.Command{
 	Use:   "update",
-	Short: "Update configurations to the latest one available on github",
+	Short: "Update selected configuration to the latest one available on GitHub",
 	Run: func(cmd *cobra.Command, args []string) {
 		configuration, _ := cmd.Flags().GetBool("configuration")
 		pluginDefinition, _ := cmd.Flags().GetBool("pluginDefinition")
