@@ -33,9 +33,9 @@ type (
 var Config Type
 var Appdata string
 var RemovedPluginDir string
-var gitRepository = "https://raw.githubusercontent.com/rbourassaca/uad_plugin_manager/main/"
-var configFileName = "config." + runtime.GOOS + ".yaml"
-var pluginDefinitionFileName = "pluginDefinition.yaml"
+var GitRepository = "https://raw.githubusercontent.com/rbourassaca/uad_plugin_manager/main/"
+var ConfigFileName = "config." + runtime.GOOS + ".yaml"
+var PluginDefinitionFileName = "pluginDefinition.yaml"
 
 func Load() {
 	initEnv()
@@ -64,8 +64,8 @@ func handleConfigFiles() {
 	viper.AddConfigPath(Appdata)
 	viper.SetConfigType("yaml")
 
-	loadConfigFile(configFileName)
-	loadConfigFile(pluginDefinitionFileName)
+	loadConfigFile(ConfigFileName)
+	loadConfigFile(PluginDefinitionFileName)
 
 	err := viper.UnmarshalExact(&Config)
 	if err != nil {
@@ -87,7 +87,7 @@ func loadConfigFile(name string) {
 	err := viper.MergeInConfig()
 	if err != nil {
 		if errors.Is(err, err.(viper.ConfigFileNotFoundError)) {
-			err := files.Download(Appdata, gitRepository+name)
+			err := files.Download(Appdata, GitRepository+name)
 			if err == nil {
 				loadConfigFile(name)
 			} else {
