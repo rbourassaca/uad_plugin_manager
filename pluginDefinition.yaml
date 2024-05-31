@@ -144,6 +144,8 @@ pluginDefinition:
     - UAD Ibanez Tube Screamer TS808
   UAD Korg SDD-3000 Digital Delay:
     - UAD Korg SDD-3000
+  UAD LA-6176 Signature Channel Strip:
+    - UAD LA-6176 Channel Strip
   UAD Lexicon 224 Digital Reverb:
     - UAD Lexicon 224
   UAD Lexicon 480L Digital Reverb and Effects:
