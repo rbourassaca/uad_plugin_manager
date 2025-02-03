@@ -11,7 +11,7 @@ You can hide or remove the plugins by hand, but, with every update it becomes a 
 ## How to use
 
 1. Download the latest release & extract the content in a folder.
-2. Place your `UADSystemProfile.txt` in one of the folders mentioned in the configuration section. [^1]
+2. Place your `UADSystemProfile.txt` in the `/config`. [^1]
 3. Open the terminal in the folder containing the executable.
 4. Run de project using `uad_plugin_manager`, you'll see available commands in the terminal.
 
@@ -28,19 +28,6 @@ You can hide or remove the plugins by hand, but, with every update it becomes a 
 - `uad_plugin_manager remove -u` [^2]
 - `uad_plugin_manager remove -n "UAD Ampeg B15N Bass Amplifier" -n "UAD SPL Vitalizer MK2-T"` [^2]
 - `uad_plugin_manager list -a`
-
-## Configuration
-
-UAD Plugin Manager checks for configuration files in two directories in this specific order:
-
-1. The same directory as the executable.
-2. The operating system configuration data folder
-   1. `$HOME/Library/Application Support/UAD-Plugin-Manager` on Mac OS X
-   2. `%AppData%/UAD-Plugin-Manager` on Windows
-
-If configuration files aren't found, the latest ones will be downloaded from this repository and be placed in the operating system configuration data folder.
-
-Configuration files in the same directory as the executable file will always have priority.
 
 ## Screenshots
 

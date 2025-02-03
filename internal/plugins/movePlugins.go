@@ -13,16 +13,21 @@ import (
 
 func MovePlugins(pluginsToMove []string) {
 	currentUnixTime := strconv.FormatInt(time.Now().Unix(), 10)
-	for i := 0; i < len(config.Config.PluginFormats); i++ {
-		glob, _ := filepath.Glob(config.Config.PluginFormats[i].Path + "/*" + config.Config.PluginFormats[i].Extension)
+	pluginFormats := config.Config.PluginFormats.Darwin
+	if config.Runtime == "windows" {
+		pluginFormats = config.Config.PluginFormats.Windows
+	}
+
+	for i := 0; i < len(pluginFormats); i++ {
+		glob, _ := filepath.Glob(pluginFormats[i].Path + "/*" + pluginFormats[i].Extension)
 		if len(glob) == 0 {
-			glob, _ = filepath.Glob(config.Config.PluginFormats[i].Path + "/**/*" + config.Config.PluginFormats[i].Extension)
+			glob, _ = filepath.Glob(pluginFormats[i].Path + "/**/*" + pluginFormats[i].Extension)
 		}
 		for x := 0; x < len(pluginsToMove); x++ {
-			currentPath := GetPluginPaths(pluginsToMove[x], config.Config.PluginFormats[i].Extension, glob)
+			currentPath := GetPluginPaths(pluginsToMove[x], pluginFormats[i].Extension, glob)
 			if slices.Contains(glob, currentPath) {
-				pluginLocation := strings.TrimPrefix(currentPath, config.Config.PluginFormats[i].Path)
-				newPath := filepath.Join(config.RemovedPluginDir, currentUnixTime, config.Config.PluginFormats[i].Name, pluginLocation)
+				pluginLocation := strings.TrimPrefix(currentPath, pluginFormats[i].Path)
+				newPath := filepath.Join(config.Config.UserData, "removedPlugins", currentUnixTime, pluginFormats[i].Name, pluginLocation)
 				err := files.Move(currentPath, newPath)
 				if err != nil {
 					fmt.Println(err.Error())

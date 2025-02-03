@@ -1,0 +1,74 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# This is the main configuration file for the software. In general, you shouldn't have to edit this unless you have a
+# specific reason to do so.
+#
+# Using an invalid config will make the software unusable.
+# ----------------------------------------------------------------------------------------------------------------------
+
+# This is where the software will store and retrieve the user data.
+userData: ./user-data
+
+# This is where the software is hosted
+repository: https://raw.githubusercontent.com/rbourassaca/uad_plugin_manager/main/
+
+# This is where the software will look for UAD Plugins.
+pluginFormats:
+  # Paths for Windows
+  windows:
+    - {
+        path: C:/Program Files/Steinberg/VSTPlugins/Universal Audio,
+        extension: .dll,
+        name: VST2,
+      }
+    - {
+        path: C:/Program Files/Steinberg/VSTPlugins/Universal Audio/UAD Mono,
+        extension: (m).dll,
+        name: VST2 (Mono),
+      }
+    - {
+        path: C:/Program Files/Common Files/VST3/Universal Audio,
+        extension: .vst3,
+        name: VST3,
+      }
+    - {
+        path: C:/Program Files/Common Files/Avid/Audio/Plug-ins/Universal Audio,
+        extension: .aaxplugin,
+        name: AAX,
+      }
+    - {
+        path: C:/Program Files/Universal Audio/Powered Plugins/UAD-2 Powered Plugins,
+        extension: .dll,
+        name: Console,
+      }
+  # Paths for Mac OS
+  darwin:
+    - {
+        path: /Library/Audio/Plug-Ins/VST/Universal Audio,
+        extension: .vst,
+        name: VST2,
+      }
+    - {
+        path: /Library/Audio/Plug-Ins/VST/Universal Audio/UAD Mono,
+        extension: (m).vst,
+        name: VST2 (Mono),
+      }
+    - {
+        path: /Library/Audio/Plug-ins/VST3/Universal Audio,
+        extension: .vst3,
+        name: VST3,
+      }
+    - {
+        path: /Library/Application Support/Avid/Audio/Plug-Ins/Universal Audio,
+        extension: .aaxplugin,
+        name: AAX,
+      }
+    - {
+        path: /Library/Audio/Plug-Ins/Components,
+        extension: .component,
+        name: Audio Units,
+      }
+    - {
+        path: /Library/Application Support/Universal Audio/UAD-2 Powered Plugins,
+        extension: .vst,
+        name: Console,
+      }

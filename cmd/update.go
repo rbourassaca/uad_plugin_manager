@@ -18,12 +18,12 @@ var updateCmd = &cobra.Command{
 		pluginDefinition, _ := cmd.Flags().GetBool("pluginDefinition")
 
 		if configuration {
-			os.Remove(filepath.Join(config.Appdata, config.ConfigFileName))
-			files.Download(config.Appdata, config.GitRepository+config.ConfigFileName)
+			os.Remove(filepath.Join("./config", "config.yaml"))
+			files.Download("./config", config.Config.Repository+"config.yaml")
 		}
 		if pluginDefinition {
-			os.Remove(filepath.Join(config.Appdata, config.PluginDefinitionFileName))
-			files.Download(config.Appdata, config.GitRepository+config.PluginDefinitionFileName)
+			os.Remove(filepath.Join("./config", "pluginDefinition.yaml"))
+			files.Download("./config", config.Config.Repository+"pluginDefinition.yaml")
 		}
 	},
 }
