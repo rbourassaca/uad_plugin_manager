@@ -55,7 +55,7 @@ Configuration files in the same directory as the executable file will always hav
 - Can providing my UADSystemProfile.txt be dangerous?
   - UADSystemProfile.txt contains a bunch of information related to your UAD hardware. Do not share it with anyone you do not trust. That being said, if you want to be cautious while using this tool, you can open it and delete everything before the line containing `UAD-2 Plug-in Authorizations`.
 - I purchased a plugin after I removed my unlicensed plugins, how can I install it?
-  - As of right now, you'll need to reinstall the UAD software and re-run this tool to remove the unlicensed plugins. I plan on adding a function to re-add only purchased plugins in the future, but I'm pretty busy with work, so I have no idea when I'll do it.
+  - As of right now, you'll need to reinstall the UAD software and re-run this tool to remove the unlicensed plugins.
 
 [^1]: To get your UADSystemProfile.txt be sure your audio interface is open and connected, open `UAD Meter & Control Panel`, click on the hamburger menu and click `System Info...`. In the new window, be sure to be in the System Info tab and click `Save Detailed System Profile` at the bottom of the page.
 [^2]: Some commands may need to run with elevated privileges since they handle protected files. On Windows you'll need to run the terminal as an administrator before using the commands and on Mac OS X you'll need to prepend sudo to the commands.
