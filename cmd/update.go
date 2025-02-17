@@ -41,6 +41,6 @@ func init() {
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	updateCmd.Flags().BoolP("configuration", "c", false, "Update paths configuration.")
+	updateCmd.Flags().BoolP("configuration", "c", false, "Update configuration.")
 	updateCmd.Flags().BoolP("pluginDefinition", "p", false, "Update plugins definition")
 }
