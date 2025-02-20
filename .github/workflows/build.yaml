@@ -23,4 +23,4 @@ jobs:
           goarch: ${{ matrix.goarch }}
           build_flags: -trimpath
           ldflags: "-s -w"
-          extra_files: ./config/config.yaml ./config/pluginDefinition.yaml
+          extra_files: ./config/
