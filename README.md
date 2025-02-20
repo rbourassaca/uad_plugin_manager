@@ -11,7 +11,7 @@ You can hide or remove the plugins by hand, but, with every update it becomes a 
 ## How to use
 
 1. Download the latest release & extract the content in a folder.
-2. Place your `UADSystemProfile.txt` in the `/config`. [^1]
+2. Place your `UADSystemProfile.txt` in the `./config` folder. [^1]
 3. Open the terminal in the folder containing the executable.
 4. Run de project using `uad_plugin_manager`, you'll see available commands in the terminal.
 
