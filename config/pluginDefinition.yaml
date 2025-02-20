@@ -1,3 +1,8 @@
+# This is the list of all UAD collections and their plugins.
+#
+# All UAD plugins belong to a collection. The collections are what is used to manage registered plugins and are visible
+# in the UADSystemProfile.txt. The plugins names are visible in their paths. Do not enter their file extension.
+
 pluginDefinition:
   UAD 4K Buss Compressor:
     - UAD 4K Buss Compressor

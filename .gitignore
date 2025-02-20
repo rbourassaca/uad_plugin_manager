@@ -2,3 +2,4 @@ UADSystemProfile.txt
 *.exe
 .DS_Store
 /.idea
+/user-data

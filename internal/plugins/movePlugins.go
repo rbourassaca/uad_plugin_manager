@@ -1,7 +1,7 @@
 package plugins
 
 import (
-	"fmt"
+	"os"
 	"path/filepath"
 	"rbourassa/uadPluginManager/internal/config"
 	"rbourassa/uadPluginManager/internal/files"
@@ -13,21 +13,27 @@ import (
 
 func MovePlugins(pluginsToMove []string) {
 	currentUnixTime := strconv.FormatInt(time.Now().Unix(), 10)
-	for i := 0; i < len(config.Config.PluginFormats); i++ {
-		glob, _ := filepath.Glob(config.Config.PluginFormats[i].Path + "/*" + config.Config.PluginFormats[i].Extension)
-		if len(glob) == 0 {
-			glob, _ = filepath.Glob(config.Config.PluginFormats[i].Path + "/**/*" + config.Config.PluginFormats[i].Extension)
-		}
-		for x := 0; x < len(pluginsToMove); x++ {
-			currentPath := GetPluginPaths(pluginsToMove[x], config.Config.PluginFormats[i].Extension, glob)
-			if slices.Contains(glob, currentPath) {
-				pluginLocation := strings.TrimPrefix(currentPath, config.Config.PluginFormats[i].Path)
-				newPath := filepath.Join(config.RemovedPluginDir, currentUnixTime, config.Config.PluginFormats[i].Name, pluginLocation)
-				err := files.Move(currentPath, newPath)
-				if err != nil {
-					fmt.Println(err.Error())
+	pluginFormats := config.Config.PluginFormats.Darwin
+	if config.Runtime == "windows" {
+		pluginFormats = config.Config.PluginFormats.Windows
+	}
+	for i := 0; i < len(pluginFormats); i++ {
+		currentPluginFormatPath := filepath.Clean(pluginFormats[i].Path)
+		filepath.Walk(currentPluginFormatPath, func(path string, info os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+			if match, _ := filepath.Match("*"+pluginFormats[i].Extension, filepath.Base(path)); match {
+				if slices.Contains(pluginsToMove, strings.TrimSuffix(filepath.Base(path), filepath.Ext(pluginFormats[i].Extension))) {
+					newPath := filepath.Join(config.Config.UserData, currentUnixTime, pluginFormats[i].Name, strings.TrimPrefix(path, currentPluginFormatPath))
+					files.Move(path, newPath)
+				}
+
+				if info.IsDir() {
+					return filepath.SkipDir
 				}
 			}
-		}
+			return nil
+		})
 	}
 }
