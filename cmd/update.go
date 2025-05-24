@@ -19,11 +19,11 @@ var updateCmd = &cobra.Command{
 
 		if configuration {
 			os.Remove(filepath.Join("./config", "config.yaml"))
-			files.Download("./config", config.Config.Repository+"config.yaml")
+			files.Download("./config", config.Config.Repository+"/config/config.yaml")
 		}
 		if pluginDefinition {
 			os.Remove(filepath.Join("./config", "pluginDefinition.yaml"))
-			files.Download("./config", config.Config.Repository+"pluginDefinition.yaml")
+			files.Download("./config", config.Config.Repository+"/config/pluginDefinition.yaml")
 		}
 	},
 }
