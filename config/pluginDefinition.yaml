@@ -8,6 +8,8 @@ pluginDefinition:
     - UAD 4K Buss Compressor
   UAD 4K Channel Strip:
     - UAD 4K Channel Strip
+  UAD A-Type Multiband Enhancer:
+    - UAD A-Type Multiband Enhancer
   UAD ADA Flanger:
     - UAD ADA Flanger
   UAD ADA STD-1 Stereo Tapped Delay:
