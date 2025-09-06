@@ -163,6 +163,8 @@ pluginDefinition:
     - UAD Little Labs VOG
   UAD MXR Flanger-Doubler:
     - UAD MXR Flanger-Doubler
+  UAD Maag Audio EQ4 MS:
+    - UAD Maag EQ4 MS
   UAD Maag EQ4 EQ:
     - UAD Maag EQ4
   UAD Manley Massive Passive EQ Collection:
@@ -302,6 +304,8 @@ pluginDefinition:
     - UAD SSL G Bus Compressor Legacy
   UAD Shadow Hills Mastering Compressor:
     - UAD Shadow Hills Mastering Compressor
+  UAD Shadow Hills Mastering Compressor Class A:
+    - UAD Shadow Hills Class A Mastering Comp
   UAD Softube Amp Room Half-Stack:
     - UAD Softube Amp Room Half-Stack
   UAD Softube Bass Amp Room:
