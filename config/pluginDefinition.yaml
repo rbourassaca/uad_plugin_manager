@@ -294,6 +294,8 @@ pluginDefinition:
     - UAD SPL TwinTube
   UAD SPL Vitalizer MK2-T:
     - UAD SPL Vitalizer MK2-T
+  UAD SPL Vitalizer MK3-T:
+    - UAD SPL Vitalizer MK3-T
   UAD SSL 4000 E Channel Strip Collection:
     - UAD SSL E Channel Strip
   UAD SSL 4000 E Legacy Channel Strip:
@@ -403,5 +405,7 @@ pluginDefinition:
   UAD elysia alpha compressor:
     - UAD elysia alpha master
     - UAD elysia alpha mix
+  UAD elysia alpha compressor V2:
+    - UAD elysia alpha compressor V2
   UAD elysia mpressor:
     - UAD elysia mpressor
