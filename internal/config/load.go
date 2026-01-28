@@ -65,7 +65,7 @@ func loadConfigFile(name string) {
 }
 
 func searchUADSystemProfile() string {
-	path, err := files.Find("UADSystemProfile.txt", []string{"./config"})
+	path, err := files.Find("UADSystemProfile.txt", "./config")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)

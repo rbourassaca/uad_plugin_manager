@@ -7,13 +7,11 @@ import (
 	"path/filepath"
 )
 
-func Find(name string, directory []string) (string, error) {
-	for i := range len(directory) {
-		path := filepath.Join(directory[i], name)
-		_, err := os.Stat(path)
-		if !errors.Is(err, os.ErrNotExist) {
-			return path, nil
-		}
+func Find(name string, directory string) (string, error) {
+	path := filepath.Join(directory, name)
+	if _, err := os.Stat(path); !errors.Is(err, os.ErrNotExist) {
+		return path, nil
 	}
-	return "", fmt.Errorf("unable to find %s in %s", name, directory)
+	absoluteDir, _ := filepath.Abs(directory)
+	return "", fmt.Errorf("unable to find %s in %v", name, absoluteDir)
 }
