@@ -8,7 +8,7 @@ import (
 )
 
 func Find(name string, directory []string) (string, error) {
-	for i := 0; i < len(directory); i++ {
+	for i := range len(directory) {
 		path := filepath.Join(directory[i], name)
 		_, err := os.Stat(path)
 		if !errors.Is(err, os.ErrNotExist) {
