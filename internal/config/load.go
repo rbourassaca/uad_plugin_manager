@@ -13,7 +13,6 @@ import (
 type (
 	Type struct {
 		UserData         string
-		Repository       string
 		Files            FilesType
 		PluginFormats    Os
 		PluginDefinition map[string][]string
