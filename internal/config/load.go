@@ -13,7 +13,6 @@ import (
 type (
 	Type struct {
 		UserData         string
-		Repository       string
 		Files            FilesType
 		PluginFormats    Os
 		PluginDefinition map[string][]string
@@ -66,7 +65,7 @@ func loadConfigFile(name string) {
 }
 
 func searchUADSystemProfile() string {
-	path, err := files.Find("UADSystemProfile.txt", []string{"./config"})
+	path, err := files.Find("UADSystemProfile.txt", "./config")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)

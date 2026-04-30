@@ -8,9 +8,6 @@
 # This is where the software will store and retrieve the user data.
 userData: ./user-data
 
-# This is where the software is hosted
-repository: https://raw.githubusercontent.com/rbourassaca/uad_plugin_manager/main/
-
 # This is where the software will look for UAD Plugins.
 pluginFormats:
   # Paths for Windows

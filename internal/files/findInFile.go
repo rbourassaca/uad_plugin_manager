@@ -11,7 +11,7 @@ func FindInFile(file *os.File, text []string, crop bool) []string {
 	var list []string
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		for i := 0; i < len(text); i++ {
+		for i := range len(text) {
 			if strings.Contains(scanner.Text(), text[i]) {
 				line := scanner.Text()
 				if crop {

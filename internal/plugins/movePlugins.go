@@ -17,7 +17,7 @@ func MovePlugins(pluginsToMove []string) {
 	if config.Runtime == "windows" {
 		pluginFormats = config.Config.PluginFormats.Windows
 	}
-	for i := 0; i < len(pluginFormats); i++ {
+	for i := range len(pluginFormats) {
 		currentPluginFormatPath := filepath.Clean(pluginFormats[i].Path)
 		filepath.Walk(currentPluginFormatPath, func(path string, info os.FileInfo, err error) error {
 			if err != nil {
