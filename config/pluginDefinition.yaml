@@ -57,6 +57,8 @@ pluginDefinition:
     - UAD Avalon VT-737sp
   UAD Bermuda Triangle Distortion:
     - UAD Bermuda Triangle
+  UAD Black Box Analog Design HG-2:
+    - UAD Black Box Analog Design HG-2
   UAD Brigade Chorus:
     - UAD Brigade Chorus
   UAD C-Suite C-Axe Guitar Noise Suppressor:
@@ -92,6 +94,9 @@ pluginDefinition:
     - UAD Dytronics Cyclosonic Panner
   UAD Dytronics Tri-Stereo Chorus:
     - UAD Dytronics Tri-Stereo Chorus
+  UAD elysia karacter Stereo Saturator:
+    - UAD elysia karacter master
+    - UAD elysia karacter mix
   UAD EMT 140 Plate Reverb:
     - UAD EMT 140
   UAD EMT 250 Digital Reverb:
