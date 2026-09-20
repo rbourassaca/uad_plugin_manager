@@ -1,12 +1,16 @@
 on:
   push:
     tags:
-      - "v*"
+      - "v*.*.*"
 
-name: Create Release
+permissions:
+  contents: write
+  packages: write
+
+name: Create Release & Build project
 
 jobs:
-  build:
+  create-release:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
@@ -14,8 +18,25 @@ jobs:
         uses: actions/checkout@master
       - name: Create Release
         id: create_release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  releases-matrix:
+    name: Release Go Binary
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        goos: [windows, darwin]
+        goarch: [amd64, arm64]
+    steps:
+      - uses: actions/checkout@master
+      - uses: wangyoucao577/go-release-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: ${{ matrix.goos }}
+          goarch: ${{ matrix.goarch }}
+          build_flags: -trimpath
+          ldflags: "-s -w"
+          extra_files: ./config/
